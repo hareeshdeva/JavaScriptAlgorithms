@@ -21,7 +21,7 @@ function alphabetSubSequence(inputString: string): boolean {
     if (new Set(charValues).size !== charValues.length) {
         return false;
     }
-    for (let i = 0; i <= charValues.length - 1; i++) {
+    for (let i = 0; i <= charValues.length -1; i++) {
         if (charValues[i] >= charValues[i + 1]){
             return false;
         };
@@ -29,5 +29,6 @@ function alphabetSubSequence(inputString: string): boolean {
     return true;
 }
 console.log(alphabetSubSequence('abcde'))
+console.log(alphabetSubSequence('zabes'))
 
 
